@@ -159,7 +159,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" class="nav-link active">
                   <i class="nav-icon fas fa-chart-bar"></i>
                   <p>Dashboard</p>
                 </a>
@@ -186,7 +186,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="organismos.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Organismos</p>
                     </a>
@@ -217,7 +217,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="legajos.html" class="nav-link">
                   <i class="nav-icon fas fa-user"></i>
                   <p>Legajos</p>
                 </a>
@@ -230,17 +230,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </aside>
 
       <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper" style="min-height: 1603.97px">
+      <div class="content-wrapper" style="min-height: 2646.62px">
         <section class="content-header">
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Grupo familiar</h1>
+                <h1>Alertas</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">Contacts</li>
+                  <li class="breadcrumb-item active">Project Detail</li>
                 </ol>
               </div>
             </div>
@@ -248,78 +248,216 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </section>
 
         <section class="content">
-          <div class="card card-solid">
-            <div class="card-body pb-0">
-              <div class="row">
-                <div
-                  class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column"
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Historial de alertas</h3>
+              <div class="card-tools">
+                <button
+                  type="button"
+                  class="btn btn-tool"
+                  data-card-widget="collapse"
+                  title="Collapse"
                 >
-                  <div class="card bg-light d-flex flex-fill">
-                    <div class="card-header text-muted border-bottom-0">
-                      HIJA
-                    </div>
-                    <div class="card-body pt-0">
-                      <div class="row">
-                        <div class="col-7">
-                          <h2 class="lead"><b>Zoe Baez</b></h2>
-                          <p class="text-muted text-sm">
-                            <b>Estado de la relación </b> 
-                            <br> BUENA 
-                          </p>
-                          <ul class="ml-4 mb-0 fa-ul text-muted">
-                            <li class="small">
-                              <span class="fa-li"
-                                ><i class="fas fa-sm fa-building"></i
-                              ></span>
-                              Dirección: El Zonda 70, Barrio Polo
-                            </li>
-                            <li class="small">
-                              <span class="fa-li"
-                                ><i class="fas fa-sm fa-phone"></i
-                              ></span>
-                              Teléfono: 15 9089 0967
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-5 text-center">
-                          <img
-                            src="dist/img/bebe.png"
-                            alt="user-avatar"
-                            class="img-circle img-fluid"
-                          />
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-tool"
+                  data-card-widget="remove"
+                  title="Remove"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-md-12 col-lg-8 order-2 order-md-1">
+                  <div class="row">
+                    <div class="col-12 col-sm-4">
+                      <div class="info-box bg-light">
+                        <div class="info-box-content">
+                          <span class="info-box-text text-center text-muted"
+                            >Total de alertas</span
+                          >
+                          <span
+                            class="info-box-number text-center text-muted mb-0"
+                            >4</span
+                          >
                         </div>
                       </div>
                     </div>
-                    <div class="card-footer">
-                      <div class="text-right">
-                        
-                        <a href="#" class="btn btn-sm btn-info">
-                          <i></i> Ver legajo
-                        </a>
+                    <div class="col-12 col-sm-4">
+                      <div class="info-box bg-light">
+                        <div class="info-box-content">
+                          <span class="info-box-text text-center text-muted"
+                            >Activas</span
+                          >
+                          <span
+                            class="info-box-number text-center text-muted mb-0"
+                            >5</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <div class="info-box bg-light">
+                        <div class="info-box-content">
+                          <span class="info-box-text text-center text-muted"
+                            >Mejoradas</span
+                          >
+                          <span
+                            class="info-box-number text-center text-muted mb-0"
+                            >7</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <h4>Recent Activity</h4>
+                      <div class="post">
+                        <div class="user-block">
+                          <img
+                            class="img-circle img-bordered-sm"
+                            src="../../dist/img/user1-128x128.jpg"
+                            alt="user image"
+                          />
+                          <span class="username">
+                            <a href="#">Jonathan Burke Jr.</a>
+                          </span>
+                          <span class="description"
+                            >Shared publicly - 7:45 PM today</span
+                          >
+                        </div>
+
+                        <p>
+                          Lorem ipsum represents a long-held tradition for
+                          designers, typographers and the like. Some people hate
+                          it and argue for its demise, but others ignore.
+                        </p>
+                        <p>
+                          <a href="#" class="link-black text-sm"
+                            ><i class="fas fa-link mr-1"></i> Demo File 1 v2</a
+                          >
+                        </p>
+                      </div>
+                      <div class="post clearfix">
+                        <div class="user-block">
+                          <img
+                            class="img-circle img-bordered-sm"
+                            src="../../dist/img/user7-128x128.jpg"
+                            alt="User Image"
+                          />
+                          <span class="username">
+                            <a href="#">Sarah Ross</a>
+                          </span>
+                          <span class="description"
+                            >Sent you a message - 3 days ago</span
+                          >
+                        </div>
+
+                        <p>
+                          Lorem ipsum represents a long-held tradition for
+                          designers, typographers and the like. Some people hate
+                          it and argue for its demise, but others ignore.
+                        </p>
+                        <p>
+                          <a href="#" class="link-black text-sm"
+                            ><i class="fas fa-link mr-1"></i> Demo File 2</a
+                          >
+                        </p>
+                      </div>
+                      <div class="post">
+                        <div class="user-block">
+                          <img
+                            class="img-circle img-bordered-sm"
+                            src="../../dist/img/user1-128x128.jpg"
+                            alt="user image"
+                          />
+                          <span class="username">
+                            <a href="#">Jonathan Burke Jr.</a>
+                          </span>
+                          <span class="description"
+                            >Shared publicly - 5 days ago</span
+                          >
+                        </div>
+
+                        <p>
+                          Lorem ipsum represents a long-held tradition for
+                          designers, typographers and the like. Some people hate
+                          it and argue for its demise, but others ignore.
+                        </p>
+                        <p>
+                          <a href="#" class="link-black text-sm"
+                            ><i class="fas fa-link mr-1"></i> Demo File 1 v1</a
+                          >
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column"
-                >
-                </div>
-                <div
-                  class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column"
-                >
-                  
+                <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
+                  <h3 class="text-primary font-weight-bold">
+                    <p></p> Jesica Baez
+                  </h3>
+                  <p class="text-muted">
+                    Raw denim you probably haven't heard of them jean shorts
+                    Austin. Nesciunt tofu stumptown aliqua butcher retro
+                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui
+                    irure terr.
+                  </p>
+                  <br />
+                  <div class="text-muted">
+                    <p class="text-sm">
+                      Client Company
+                      <b class="d-block">Deveint Inc</b>
+                    </p>
+                    <p class="text-sm">
+                      Project Leader
+                      <b class="d-block">Tony Chicken</b>
+                    </p>
+                  </div>
+                  <h5 class="mt-5 text-muted">Project files</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="" class="btn-link text-secondary"
+                        ><i class="far fa-fw fa-file-word"></i>
+                        Functional-requirements.docx</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="btn-link text-secondary"
+                        ><i class="far fa-fw fa-file-pdf"></i> UAT.pdf</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="btn-link text-secondary"
+                        ><i class="far fa-fw fa-envelope"></i>
+                        Email-from-flatbal.mln</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="btn-link text-secondary"
+                        ><i class="far fa-fw fa-image"></i> Logo.png</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="btn-link text-secondary"
+                        ><i class="far fa-fw fa-file-word"></i>
+                        Contract-10_12_2014.docx</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="text-center mt-5 mb-3">
+                    <a href="#" class="btn btn-sm btn-primary">Add files</a>
+                    <a href="#" class="btn btn-sm btn-warning"
+                      >Report contact</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="card-footer">
-              <nav aria-label="Contacts Page Navigation">
-                <ul class="pagination justify-content-center m-0">
-                  <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                  </li>
-                </ul>
-              </nav>
             </div>
           </div>
         </section>
@@ -399,95 +537,5 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="dist/js/pages/dashboard2.js"></script>
-    <script src="dist/js/pages/dashboard3.js"></script>
-
-    <script>
-      $(function () {
-        /* ChartJS
-         * -------
-         * Here we will create a few charts using ChartJS
-         */
-
-        //--------------
-        //- AREA CHART -
-        //--------------
-
-        // Get context with jQuery - using jQuery's .get() method.
-
-        var areaChartData = {
-          labels: ["2019", "2020", "2021", "2022", "2023"],
-          datasets: [
-            {
-              label: "Riesgo Hogar",
-              //backgroundColor: 'rgba(60,141,188,0.9)',
-              fill: false,
-              borderColor: "#14afe4 ",
-              data: [28, 32, 36, 24, 31],
-            },
-            {
-              label: "Riesgo Educacion",
-              //backgroundColor: 'rgba(210, 214, 222, 1)',
-              fill: false,
-              borderColor: "#5d5d5d ",
-              data: [32, 28, 30, 29, 25],
-            },
-            {
-              label: "Riesgo Salud",
-              //backgroundColor: 'rgba(210, 214, 222, 1)',
-              fill: false,
-              borderColor: "#ffc107",
-              data: [30, 31, 26, 35, 28],
-            },
-            {
-              label: "Riesgo Habitacional",
-              //backgroundColor: 'rgba(210, 214, 222, 1)',
-              fill: false,
-              borderColor: "red",
-              data: [34, 32, 37, 29, 22],
-            },
-          ],
-        };
-
-        var areaChartOptions = {
-          maintainAspectRatio: false,
-          responsive: true,
-          legend: {
-            display: false,
-          },
-          scales: {
-            xAxes: [
-              {
-                gridLines: {
-                  display: true,
-                },
-              },
-            ],
-            yAxes: [
-              {
-                gridLines: {
-                  display: true,
-                },
-              },
-            ],
-          },
-        };
-
-        //-------------
-        //- LINE CHART -
-        //--------------
-        var lineChartCanvas = $("#lineChart").get(0).getContext("2d");
-        var lineChartOptions = $.extend(true, {}, areaChartOptions);
-        var lineChartData = $.extend(true, {}, areaChartData);
-        lineChartData.datasets[0].fill = false;
-        lineChartData.datasets[1].fill = false;
-        lineChartOptions.datasetFill = false;
-
-        var lineChart = new Chart(lineChartCanvas, {
-          type: "line",
-          data: lineChartData,
-          options: lineChartOptions,
-        });
-      });
-    </script>
   </body>
 </html>
